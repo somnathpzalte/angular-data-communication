@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'component-communication';
+  userList = [] as any;
+  onUserAdded(user:Object){
+    this.userList.push(user);
+    console.log(this.userList);
+  }
+  onRemoveUsers(){
+    this.userList = [];
+  }
 }

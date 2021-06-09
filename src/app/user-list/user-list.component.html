@@ -1,0 +1,14 @@
+<br><br><br><h3>Users </h3><button class="pull-right btn btn-outline-danger btn-xs" (click)="removeAll()" *ngIf="users.length > 0">Clear All</button>
+<table class="table table-bordered table-responsive" *ngIf="users.length > 0">
+    <tbody>
+        <th>User Name</th>
+        <th>Address</th>
+    </tbody>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user['userName']}}</td>
+            <td>{{user['userAddress']}}</td>
+        </tr>
+    </tbody>
+</table>
+<span *ngIf="users.length <= 0">No user added</span>

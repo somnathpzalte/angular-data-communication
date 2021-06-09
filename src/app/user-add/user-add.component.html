@@ -1,0 +1,15 @@
+<h3>Enter User Details</h3>
+<div class="row">
+    <div class="form-group  col-lg-4">
+        <label for="userName" class="label">User Name</label>
+        <input type="text" [(ngModel)]="userName" placeholder="User Name" class="form-control">
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="userAddress" class="label">Address</label>
+        <input type="text" [(ngModel)]="userAddress" placeholder="User Address" class="form-control">
+    </div>
+    <div class="form-group col-lg-2">
+        <br>
+        <button class="btn btn-outline-primary" type="button" (click)="onUserAdd()">Submit</button>
+    </div>
+</div>
